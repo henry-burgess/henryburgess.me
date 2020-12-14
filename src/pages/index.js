@@ -1,4 +1,7 @@
 import * as React from "react"
+import ProfileImage from '../assets/Profile.png'
+
+const accent = "#26DBBD"
 
 // styles
 const pageStyles = {
@@ -8,21 +11,14 @@ const pageStyles = {
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
+  marginBottom: 32,
   maxWidth: 320,
 }
 const headingAccentStyles = {
-  color: "#663399",
+  color: accent,
 }
 const paragraphStyles = {
   marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
 }
 const listStyles = {
   marginBottom: 96,
@@ -35,73 +31,91 @@ const listItemStyles = {
   letterSpacing: 1,
 }
 const linkStyles = {
-  color: "#8954A8",
+  color: "#1ba68f",
+}
+const profileStyles = {
+  borderRadius: "50%",
+  width: "10vw",
+  padding: "1vw 1vw 1vw 1vw",
+}
+const introDivStyles = {
+  backgroundColor: accent,
+  padding: "2vw 1vw 2vw 1vw",
+}
+const introHeadingStyles = {
+  marginTop: 20,
+  marginBottom: 32,
+  color: "#FFFFFF",
+}
+const introParagraphStyles = {
+  color: "#FFFFFF",
+  marginBottom: 20,
 }
 
 // data
 const links = [
   {
-    text: "Documentation",
-    url: "https://www.gatsbyjs.com/docs/",
+    text: "Twitter",
+    url: "https://www.twitter.com/henryjburg/",
   },
   {
-    text: "Tutorials",
-    url: "https://www.gatsbyjs.com/tutorial/",
+    text: "Medium",
+    url: "https://henryjburg.medium.com",
   },
   {
-    text: "Guides",
-    url: "https://www.gatsbyjs.com/tutorial/",
-  },
-  {
-    text: "API Reference",
-    url: "https://www.gatsbyjs.com/docs/api-reference/",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-  },
-  {
-    text: "Cheat Sheet",
-    url: "https://www.gatsbyjs.com/docs/cheat-sheet/",
+    text: "GitHub",
+    url: "https://www.github.com/henry-burgess",
   },
 ]
 
-// markup
 const IndexPage = () => {
   return (
     <main style={pageStyles}>
-      <title>Home Page</title>
+      <title>Henry Burgess</title>
+
       <h1 style={headingStyles}>
-        Congratulations
+        Hi!
         <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site!</span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
+        <span style={headingAccentStyles}>I'm Henry.</span>
       </h1>
+
+      <div style={introDivStyles}>
+        <img src={ProfileImage} alt='Henry Burgess' style={profileStyles}></img>
+        <h2 style={introHeadingStyles}>
+          I'm a Software Engineering student at the University of Queensland. 
+        </h2>
+        <p style={introParagraphStyles}>
+          I have experience developing software that helps people stay safe, learn more about our body, and study the health of the land we live in!
+        </p>
+      </div>
+
+      <br />
+
+      <h1 style={headingStyles}>
+        Projects
+      </h1>
+      <h2 style={headingStyles}>
+        Raspberry Pi guitar effects
+      </h2>
       <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time.{" "}
-        <span role="img" aria-label="Sunglasses smiley emoji">
-          😎
-        </span>
+        I used my Raspberry Pi to process audio input and apply various effects using the open-source Guitarix and JACK software. I've put some code on <a href='https://github.com/henry-burgess/rpi-guitar-fx'>GitHub</a> that allows you to use two push-buttons to cycle the active Guitarix preset. You can read the entire process in the article I wrote on <a style={linkStyles} href='https://henryjburg.medium.com/guitar-effects-using-a-raspberry-pi-b24d39489a89'>Medium</a>.
       </p>
+
+      <h1 style={headingStyles}>
+        Contact
+      </h1>
       <ul style={listStyles}>
         {links.map(link => (
           <li style={listItemStyles}>
             <a
               style={linkStyles}
-              href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
+              href={`${link.url}`}
             >
               {link.text}
             </a>
           </li>
         ))}
       </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2C13.3132 2 14.6136 2.25866 15.8268 2.7612C17.0401 3.26375 18.1425 4.00035 19.0711 4.92893C19.9997 5.85752 20.7362 6.95991 21.2388 8.17317C21.7413 9.38642 22 10.6868 22 12C22 14.6522 20.9464 17.1957 19.0711 19.0711C17.1957 20.9464 14.6522 22 12 22C10.6868 22 9.38642 21.7413 8.17317 21.2388C6.95991 20.7362 5.85752 19.9997 4.92893 19.0711C3.05357 17.1957 2 14.6522 2 12C2 9.34784 3.05357 6.8043 4.92893 4.92893C6.8043 3.05357 9.34784 2 12 2ZM12 4C8.27 4 5.14 6.55 4.25 10L14 19.75C17.45 18.86 20 15.73 20 12H14.75V13.5H18.2C17.71 15.54 16.24 17.19 14.31 17.94L6.06 9.69C7 7.31 9.3 5.63 12 5.63C14.13 5.63 16 6.67 17.18 8.28L18.41 7.22C16.95 5.26 14.63 4 12 4ZM4 12C4 14.1217 4.84285 16.1566 6.34315 17.6569C7.84344 19.1571 9.87827 20 12 20C12.04 20 12.09 20 4 12Z' fill='%23663399'/%3E%3C/svg%3E%0A"
-      />
     </main>
   )
 }
