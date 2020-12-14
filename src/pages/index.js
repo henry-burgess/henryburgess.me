@@ -6,7 +6,7 @@ const accent = "#26DBBD"
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: "96px",
+  padding: "5vw 10vw 5vw 10vw",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {
