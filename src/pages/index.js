@@ -1,9 +1,10 @@
 import * as React from "react"
 import ProfileImage from '../assets/Profile.png'
 
+// Accent colour
 const accent = "#26DBBD"
 
-// styles
+// Page styling
 const pageStyles = {
   color: "#232129",
   padding: "5vw 10vw 5vw 10vw",
@@ -52,11 +53,15 @@ const introParagraphStyles = {
   marginBottom: 20,
 }
 
-// data
+// Social Media links
 const links = [
   {
     text: "Twitter",
     url: "https://www.twitter.com/henryjburg/",
+  },
+  {
+    text: "LinkedIn",
+    url: "https://www.linkedin.com/in/henryjamesburgess/",
   },
   {
     text: "Medium",
@@ -95,10 +100,23 @@ const IndexPage = () => {
         Projects
       </h1>
       <h2 style={headingStyles}>
+        psygo
+      </h2>
+      <p style={paragraphStyles}>
+        psygo aims to be a tool that streamlines creating plugins for the <a href='https://www.jspsych.org'>jsPsych</a> JavaScript library. 
+        jsPsych can be used to create behavioural experiments that can be run through a web browser. 
+        My project provides an easy method of setting up a development environment, testing the plugin, and eventually will support exporting any required files in 
+        a format suitable for use on an administrative platform such as <a href='https://gorilla.sc'>Gorilla</a>.
+        psygo will eventually be released as a Node JS-based CLI, and the source code is on my <a href='https://github.com/henry-burgess/psygo'>GitHub</a>.
+      </p>
+
+      <h2 style={headingStyles}>
         Raspberry Pi guitar effects
       </h2>
       <p style={paragraphStyles}>
-        I used my Raspberry Pi to process audio input and apply various effects using the open-source Guitarix and JACK software. I've put some code on <a href='https://github.com/henry-burgess/rpi-guitar-fx'>GitHub</a> that allows you to use two push-buttons to cycle the active Guitarix preset. You can read the entire process in the article I wrote on <a style={linkStyles} href='https://henryjburg.medium.com/guitar-effects-using-a-raspberry-pi-b24d39489a89'>Medium</a>.
+        I used my Raspberry Pi to process audio input and apply various effects using the open-source Guitarix and JACK software. 
+        I've put some code on <a href='https://github.com/henry-burgess/rpi-guitar-fx'>GitHub</a> that allows you to use two push-buttons to cycle the active Guitarix preset. 
+        You can read the entire process in the article I wrote on <a style={linkStyles} href='https://henryjburg.medium.com/guitar-effects-using-a-raspberry-pi-b24d39489a89'>Medium</a>.
       </p>
 
       <h1 style={headingStyles}>
