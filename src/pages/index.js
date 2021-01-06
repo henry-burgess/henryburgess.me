@@ -111,6 +111,15 @@ const IndexPage = () => {
       </p>
 
       <h2 style={headingStyles}>
+        coinspotapi
+      </h2>
+      <p style={paragraphStyles}>
+        This is an API wrapper written in Node.js for the Australian <a href='https://www.coinspot.com.au'>CoinSpot</a> cryptocurrency exchange.
+        It will eventually provide access to all of the API functionality described in the CoinSpot API <a href='https://www.coinspot.com.au/api'>documentation</a> and is a work in progress.
+        The source code is available publicly on <a href='https://github.com/henry-burgess/coinspotapi'>GitHub</a>, and the library can be installed by running <code>npm i @henryburgess/coinspotapi</code>.
+      </p>
+
+      <h2 style={headingStyles}>
         Raspberry Pi guitar effects
       </h2>
       <p style={paragraphStyles}>
