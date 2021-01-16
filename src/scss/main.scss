@@ -1,0 +1,58 @@
+@import "variables";
+
+.pageStyles {
+  font-family: $font;
+  padding: 5vw 10vw 5vw 10vw;
+}
+
+.headingAccentStyles {
+  color: $highlight
+}
+
+.headingStyle {
+  margin-top: 0;
+  margin-bottom: 32;
+  max-width: 320;
+}
+
+.paragraphStyles {
+  margin-bottom: 48;
+}
+
+.listStyles {
+  margin-bottom: 96;
+  padding-left: 0;
+  list-style-type: "none";
+}
+
+.listItemStyles {
+  margin-bottom: 12;
+  font-weight: 300;
+  letter-spacing: 1;
+}
+
+.linkStyles {
+  color: $highlight;
+}
+
+.profileStyles {
+  border-radius: 50%;
+  width: 10vw;
+  padding: 1vw 1vw 1vw 1vw;
+}
+
+.introDivStyles {
+  background-color: $secondary;
+  padding: 2vw 1vw 2vw 1vw;
+}
+
+.introHeadingStyles {
+  margin-top: 20;
+  margin-bottom: 32;
+  color: #FFFFFF;
+}
+
+.introParagraphStyles {
+  color: #FFFFFF;
+  margin-bottom: 20;
+}
