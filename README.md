@@ -7,15 +7,13 @@ Find me at [henryburgess.me](https://henryburgess.me)!
 ## Building the site 🔨
 
 ```shell
-npm run build
+gatsby build
 ```
 
 ## Making updates 👨‍💻
 
 ```shell
-npm run develop
+gatsby develop
 ```
 
-[Gatsby Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-Built using Gatsby 💜
+Built with 💜 using [Gatsby](https://www.gatsbyjs.com/) 
