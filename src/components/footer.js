@@ -7,37 +7,38 @@ import "../scss/main.scss"
 // Social Media links
 const links = [
   {
-    text: "Twitter",
+    text: "twitter",
     url: "https://www.twitter.com/henryjburg/",
   },
   {
-    text: "LinkedIn",
+    text: "linkedin",
     url: "https://www.linkedin.com/in/henryjamesburgess/",
   },
   {
-    text: "Medium",
+    text: "medium",
     url: "https://henryjburg.medium.com",
   },
   {
-    text: "GitHub",
+    text: "github",
     url: "https://www.github.com/henry-burgess",
   },
 ]
 
 const Footer = () => {
   return (
-    <ul className={'listStyles'}>
-        {links.map(link => (
-          <li className={'listItemStyles'}>
-            <a
-              className={'linkStyles'}
-              href={`${link.url}`}
-            >
-              {link.text}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <footer className={"footer"}>
+      <div>
+        <ul style={{ display: "flex", flex: 1 }}>
+            {links.map(link => (
+              <li className={"footerItem"}>
+                <a className={"footerLink"} href={`${link.url}`}>
+                  {link.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+      </div>
+    </footer>
   )
 }
 

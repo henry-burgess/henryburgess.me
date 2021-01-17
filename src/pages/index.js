@@ -16,10 +16,10 @@ const IndexPage = () => {
         </h1>
         <img src={ProfileImage} alt='Henry Burgess' className={'profileStyles'}></img>
         <h2 className={'introHeadingStyles'}>
-          A Software Engineering student at the University of Queensland. 
+          A <span className={'emphasisPrimary'}>Software Engineering</span> student at the <span className={'emphasisPrimary'}>University of Queensland</span>. 
         </h2>
         <p className={'introParagraphStyles'}>
-          I have experience developing software that helps people stay safe, learn more about our body, and study the health of the land we live in!
+          I've built web apps that help people stay safe, study the brain, and protect the Great Barrier Reef!
         </p>
       </div>
     </Layout>
