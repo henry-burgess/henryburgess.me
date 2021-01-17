@@ -24,7 +24,7 @@ const ProjectsPage = () => {
       <p className={'paragraphStyles'}>
         My project provides an easy method of setting up a development environment, testing the plugin, and eventually will support exporting any required files in 
         a format suitable for use on an administrative platform such as <a href='https://gorilla.sc'>Gorilla</a>.
-        psygo will eventually be released as a Node JS-based CLI, and the source code is on my <a href='https://github.com/henry-burgess/psygo'>GitHub</a>.
+        psygo will eventually be released as a CLI, and the source code is on my <a href='https://github.com/henry-burgess/psygo'>GitHub</a>.
       </p>
       <p className={'paragraphStyles'}>
         You can install an early version by running <code>npm i -g psygo</code>.
@@ -36,7 +36,7 @@ const ProjectsPage = () => {
         coinspotapi
       </h2>
       <p className={'paragraphStyles'}>
-        This is an API wrapper written in Node.js for the Australian <a href='https://www.coinspot.com.au'>CoinSpot</a> cryptocurrency exchange.
+        This is an API wrapper written in TypeScript for the Australian <a href='https://www.coinspot.com.au'>CoinSpot</a> cryptocurrency exchange.
       </p>
       <p className={'paragraphStyles'}>
         It will eventually provide access to all of the API functionality described in the CoinSpot API <a href='https://www.coinspot.com.au/api'>documentation</a> and is a work in progress.
