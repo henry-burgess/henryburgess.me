@@ -40,7 +40,7 @@ const ProjectsPage = () => {
       <p className={'paragraphStyles'}>
         I used my Raspberry Pi to process audio input and apply various effects using the open-source Guitarix and JACK software. 
         I've put some code on <a href='https://github.com/henry-burgess/rpi-guitar-fx'>GitHub</a> that allows you to use two push-buttons to cycle the active Guitarix preset. 
-        You can read the entire process in the article I wrote on <a className={'linkStyles'} href='https://henryjburg.medium.com/guitar-effects-using-a-raspberry-pi-b24d39489a89'>Medium</a>.
+        You can read the entire process in the article I wrote on <a href='https://henryjburg.medium.com/guitar-effects-using-a-raspberry-pi-b24d39489a89'>Medium</a>.
       </p>
     </Layout>
   )
