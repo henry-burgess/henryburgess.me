@@ -14,6 +14,19 @@ const ProjectsPage = () => {
       <h1 className={'headingStyles'}>
         Projects
       </h1>
+
+      <h2 className={'headingStyles'}>
+        jspsych-survey-control
+      </h2>
+      <p className={'paragraphStyles'}>
+        A jsPsych plugin that enables control questions or attention checks to be easily added to behavioural experiments. It is up on GitHub at <a href='https://github.com/henry-burgess/jspsych-survey-control'>jspsych-survey-control</a>.
+      </p>
+      <p className={'paragraphStyles'}>
+        You can add it to your project by running <code>npm i jspsych-survey-control</code>.
+      </p>
+
+      <br></br>
+
       <h2 className={'headingStyles'}>
         psygo
       </h2>

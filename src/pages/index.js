@@ -19,7 +19,7 @@ const IndexPage = () => {
           A <span className={'emphasisPrimary'}>Software Engineering</span> student at the <span className={'emphasisPrimary'}>University of Queensland</span>. 
         </h2>
         <p className={'introParagraphStyles'}>
-          I've built web apps that help people stay safe, study the brain, and protect the Great Barrier Reef!
+          I've built web apps that help people study the brain, stay safe, and protect the Great Barrier Reef!
         </p>
       </div>
     </Layout>
